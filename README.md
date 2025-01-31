@@ -115,7 +115,7 @@ The code produces:
 
 3. NOAA Physical Sciences Laboratory EDDI Documentation:
    - [EDDI Homepage](https://psl.noaa.gov/eddi/)
-   - [EDDI User Guide](https://psl.noaa.gov/eddi/documentation.html)
+   - [EDDI User Guide](https://psl.noaa.gov/eddi/#resources)
 
 4. Allen, R. G., Pereira, L. S., Raes, D., & Smith, M. (1998). Crop evapotranspiration-Guidelines for computing crop water requirements. FAO Irrigation and drainage paper 56, FAO, Rome, 300(9), D05109.
 
