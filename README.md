@@ -19,7 +19,9 @@ Despite these environmental challenges, Sumba has gained international recogniti
 
 ## Input Data Requirements
 
-> **Important**: This documentation focuses on the EDDI calculation methodology and implementation. The preliminary steps of downloading AgERA5 data from the Copernicus Climate Data Store (CDS), preprocessing individual variables, and merging them into the required format are not discussed here. These data preparation steps should be completed separately following CDS guidelines and data handling best practices. For information about data acquisition and preprocessing, please refer to the CDS documentation and API guidelines.
+> [!IMPORTANT]
+> This documentation focuses on the EDDI calculation methodology and implementation. The preliminary steps of downloading AgERA5 data from the Copernicus Climate Data Store (CDS), preprocessing individual variables, and merging them into the required format are not discussed here. These data preparation steps should be completed separately following CDS guidelines and data handling best practices. For information about data acquisition and preprocessing, please refer to the CDS documentation and API guidelines.
+> >
 
 ### AgERA5 Data
 
@@ -135,19 +137,19 @@ The EDDI calculation involves the following steps:
 4. **EDDI Classification**:
    The final EDDI value is expressed as a percentile, classified into categories:
 
-| Percentile Range | Category | Color | HEX | RGB |
-|-----------------|----------|-----|-------------|-----|
-| 98-100 | ED4 (Exceptional Drought) | <span style="background-color: #67001F; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #67001F | rgb(103, 0, 31) |
-| 95-98  | ED3 (Extreme Drought)     | <span style="background-color: #B2182B; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #B2182B | rgb(178, 24, 43) |
-| 90-95  | ED2 (Severe Drought)      | <span style="background-color: #D6604D; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #D6604D | rgb(214, 96, 77) |
-| 80-90  | ED1 (Moderate Drought)    | <span style="background-color: #F4A582; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #F4A582 | rgb(244, 165, 130) |
-| 70-80  | ED0 (Abnormally Dry)      | <span style="background-color: #FDDBC7; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #FDDBC7 | rgb(253, 219, 199) |
-| 30-70  | Normal                    | <span style="background-color: #F7F7F7; padding: 0 10px;border: 1px solid #000;">&nbsp;&nbsp;&nbsp;</span> | #F7F7F7 | rgb(247, 247, 247) |
-| 20-30  | EW0 (Abnormally Wet)      | <span style="background-color: #D1E5F0; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #D1E5F0 | rgb(209, 229, 240) |
-| 10-20  | EW1 (Moderately Wet)      | <span style="background-color: #92C5DE; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #92C5DE | rgb(146, 197, 222) |
-| 5-10   | EW2 (Severely Wet)        | <span style="background-color: #4393C3; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #4393C3 | rgb(67, 147, 195) |
-| 2-5    | EW3 (Extremely Wet)       | <span style="background-color: #2166AC; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #2166AC | rgb(33, 102, 172) |
-| 0-2    | EW4 (Exceptionally Wet)   | <span style="background-color: #053061; padding: 0 10px;">&nbsp;&nbsp;&nbsp;</span> | #053061 | rgb(5, 48, 97) |
+| Percentile Range | Category | HEX | RGB |
+|----:|----|----|----|
+| 98 - 100 | ED4 (Exceptional Drought) | `#67001F` | `rgb(103, 0, 31)` |
+| 95 -  98  | ED3 (Extreme Drought)     | `#B2182B` | `rgb(178, 24, 43)` |
+| 90 -  95  | ED2 (Severe Drought)      | `#D6604D` | `rgb(214, 96, 77)` |
+| 80 -  90  | ED1 (Moderate Drought)    | `#F4A582` | `rgb(244, 165, 130)` |
+| 70 -  80  | ED0 (Abnormally Dry)      | `#FDDBC7` | `rgb(253, 219, 199)` |
+| 30 -  70  | Normal                    | `#F7F7F7` | `rgb(247, 247, 247)` |
+| 20 -  30  | EW0 (Abnormally Wet)      | `#D1E5F0` | `rgb(209, 229, 240)` |
+| 10 - 20  | EW1 (Moderately Wet)      | `#92C5DE` | `rgb(146, 197, 222)` |
+| 5 -  10   | EW2 (Severely Wet)        | `#4393C3` | `rgb(67, 147, 195)` |
+| 2 - 5    | EW3 (Extremely Wet)       | `#2166AC` | `rgb(33, 102, 172)` |
+| 0 - 2    | EW4 (Exceptionally Wet)   | `#053061` | `rgb(5, 48, 97)` |
 
 ### Code Output
 
